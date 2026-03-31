@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin
+Disallow: /api/
+Disallow: /contact/merci
+
+Sitemap: https://numatechservices.net/sitemap.xml
