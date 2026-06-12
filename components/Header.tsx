@@ -200,10 +200,7 @@ export default function Header() {
                 className="block w-full bg-primary text-white py-3 rounded-xl text-center font-semibold">
                 Demander un devis
               </Link>
-              <Link href="https://crm.numatechservices.net/public/login" onClick={() => setMobileOpen(false)}
-                className="block w-full bg-primary text-white py-3 rounded-xl text-center font-semibold">
-                CRM
-              </Link>
+              
             </div>
           </div>
         )}
