@@ -202,7 +202,7 @@ export default function Header() {
               </Link>
               <Link href="https://crm.numatechservices.net/public/login" onClick={() => setMobileOpen(false)}
                 className="block w-full bg-primary text-white py-3 rounded-xl text-center font-semibold">
-                Demander un devis
+                CRM
               </Link>
             </div>
           </div>
