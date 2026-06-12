@@ -133,7 +133,7 @@ export default function Header() {
               rel="noopener noreferrer"
               className="border border-gray-300 text-gray-700 px-4 py-2.5 rounded-xl hover:bg-gray-50 hover:border-gray-400 transition text-sm font-medium"
             >
-              Espace Client
+              CRM
             </a>
 
             <Link href="/contact" className="bg-primary text-white px-5 py-2.5 rounded-xl hover:bg-primary-dark transition shadow-lg text-sm font-semibold">
