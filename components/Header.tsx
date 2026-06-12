@@ -216,7 +216,7 @@ export default function Header() {
                 onClick={() => setMobileOpen(false)}
                 className="block w-full border border-gray-300 text-gray-700 py-3 rounded-xl text-center font-medium hover:bg-gray-50"
               >
-                Espace Client
+                CRM
               </a>
 
               <Link href="/contact" onClick={() => setMobileOpen(false)}
