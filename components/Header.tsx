@@ -57,23 +57,23 @@ export default function Header() {
 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 shrink-0">
-  <div className="w-10 h-10 rounded-xl overflow-hidden shadow">
-    <img
-      src="/images/logo.png"
-      alt="Logo Numatech"
-      className="w-full h-full object-cover"
-    />
-  </div>
+            <div className="w-10 h-10 rounded-xl overflow-hidden shadow">
+              <img
+                src="/images/logo.png"
+                alt="Logo Numatech"
+                className="w-full h-full object-cover"
+              />
+            </div>
 
-  <div className="hidden sm:block">
-    <div className="font-bold text-base leading-tight text-gray-900">
-      Numatech Services
-    </div>
-    <div className="text-xs text-gray-500">
-      IT & Équipement pédagogique
-    </div>
-  </div>
-</Link>
+            <div className="hidden sm:block">
+              <div className="font-bold text-base leading-tight text-gray-900">
+                Numatech Services
+              </div>
+              <div className="text-xs text-gray-500">
+                IT & Équipement pédagogique
+              </div>
+            </div>
+          </Link>
 
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center gap-1">
@@ -121,10 +121,21 @@ export default function Header() {
           </div>
 
           {/* Actions desktop */}
-          <div className="hidden lg:flex items-center gap-3 shrink-0">
-            <a href="tel:+33100000000" className="flex items-center gap-2 text-sm text-gray-600 hover:text-primary transition">
+          <div className="hidden lg:flex items-center gap-4 shrink-0">
+            <a href="tel:+22796556984" className="flex items-center gap-2 text-sm text-gray-600 hover:text-primary transition">
               <Phone size={15} /><span className="font-medium">+227 96 55 69 84</span>
             </a>
+            
+            {/* Nouveau lien CRM ajouté ici */}
+            <a 
+              href="https://crm.numatechservices.net/public/login" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="border border-gray-300 text-gray-700 px-4 py-2.5 rounded-xl hover:bg-gray-50 hover:border-gray-400 transition text-sm font-medium"
+            >
+              Espace Client
+            </a>
+
             <Link href="/contact" className="bg-primary text-white px-5 py-2.5 rounded-xl hover:bg-primary-dark transition shadow-lg text-sm font-semibold">
               Demander un devis
             </Link>
@@ -192,15 +203,26 @@ export default function Header() {
             })}
 
             <div className="pt-3 space-y-2">
-              <a href="tel:+33100000000"
+              <a href="tel:+22796556984"
                 className="flex items-center justify-center gap-2 w-full border-2 border-gray-200 py-3 rounded-xl font-medium text-sm">
                 <Phone size={16} /> +227 96 55 69 84
               </a>
+
+              {/* Nouveau lien CRM pour le menu mobile */}
+              <a 
+                href="https://crm.numatechservices.net/public/login" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={() => setMobileOpen(false)}
+                className="block w-full border border-gray-300 text-gray-700 py-3 rounded-xl text-center font-medium hover:bg-gray-50"
+              >
+                Espace Client
+              </a>
+
               <Link href="/contact" onClick={() => setMobileOpen(false)}
                 className="block w-full bg-primary text-white py-3 rounded-xl text-center font-semibold">
                 Demander un devis
               </Link>
-              
             </div>
           </div>
         )}
